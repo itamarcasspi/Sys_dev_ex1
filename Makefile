@@ -22,13 +22,13 @@ recursived: libclassrec.so
 	
 
 libclassrec.so: $(OBJ_REC)
-	$(CC) -shared -o libclassrec.so $(OBJ_REC)
+	$(CC) -fpic -shared -o libclassrec.so $(OBJ_REC)
 
 loopd: libclassloops.so
 	
 
 libclassloops.so: $(OBJ_LOOP)
-	$(CC) -shared -o libclassloops.so $(OBJ_LOOP)
+	$(CC) -fpic -shared -o libclassloops.so $(OBJ_LOOP)
 
 
 #driver program:
